@@ -77,7 +77,7 @@ console.log(brickCalculator(15));
 
 //problem 4
 
-function tinyFriends(friends)
+function tinyFriend(friends)
 {
     if(friends.length==0)
     {
@@ -90,7 +90,11 @@ function tinyFriends(friends)
         for (var i=0; i < friends.length; i++)
         {
             nameSize = friends[i].length; //getting the size of each element
-            if(nameSize<=size)
+            if(nameSize==0)
+            {
+                return "You entered a name which is an empty string.";
+            }
+            else(nameSize>0 && nameSize<=size)
             {
                 tiny=friends[i]; //storing the lowest size in tiny
                 size=nameSize; //updating the lowest size
@@ -101,4 +105,5 @@ function tinyFriends(friends)
 }
 
 friendList = []; 
-console.log(tinyFriends(friendList));
+console.log(tinyFriend(friendList));
+
