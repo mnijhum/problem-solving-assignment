@@ -24,11 +24,11 @@ function woodCalculator(chair,table,bed)
     }
     else
     {
-        var totalOfChair = chair*1; //1 cubic feet wood needed for 1 chair
-        var totalOfTable = table*3; //3 cubic feet wood needed for 1 table
-        var totalOfBed = bed*5; //5 cubic feet wood needed for 1 bed
+        var totalForChair = chair*1; //1 cubic feet wood needed for 1 chair
+        var totalForTable = table*3; //3 cubic feet wood needed for 1 table
+        var totalForBed = bed*5; //5 cubic feet wood needed for 1 bed
 
-        var totalWoodNeed=totalOfChair + totalOfTable + totalOfBed;
+        var totalWoodNeed = totalForChair + totalForTable + totalForBed;
         return totalWoodNeed;
     }
 }
