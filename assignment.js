@@ -8,8 +8,8 @@ function feetToMile(feetLength)
     }
     else
     {
-        var feet = mileValue*feetLength;
-        return feet;
+        var mile = mileValue*feetLength;
+        return mile;
     }
 
 }
